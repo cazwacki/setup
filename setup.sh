@@ -3,6 +3,8 @@ sudo apt-get install -y python3 python3-pip python3-setuptools python3-gi python
 sudo -H pip3 install https://github.com/ssokolow/quicktile/archive/master.zip --break-system-packages
 cp ./quicktile.cfg ~/.config/quicktile.cfg
 cp Quicktile.desktop ~/.config/autostart/Quicktile.desktop
+source ~/.profile
+quicktile --daemonize
 
 # emacs for development
 sudo apt-get install emacs
