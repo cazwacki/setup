@@ -7,7 +7,6 @@
 
 (setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
 (setq backup-by-copying t)
-(setq auto-save-file-name-transforms `(("." . ,(concat user-emacs-directory "autosaves"))))
 
 ;; quit Emacs directly even if there are running processes
 (setq confirm-kill-processes nil)
@@ -104,6 +103,9 @@
 (global-set-key [f8] 'neotree-toggle)
 (setq neo-theme (if (display-graphic-p) 'nerd-icons 'arrow))
 (setq-default neo-show-hidden-files t)
+(setq-default neo-autorefresh t)
+(setq-default neo-window-width 40)
+(setq-default neo-hide-cursor t)
 (neotree-toggle)
 
 (custom-set-variables
