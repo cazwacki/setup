@@ -163,4 +163,4 @@
     )
   :bind
   ("C-<tab>" . centaur-tabs-backward)
-  ("C-S-<tab>" . centaur-tabs-forward))
+  ("C-<iso-lefttab>" . centaur-tabs-forward))
